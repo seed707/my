@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #d1 {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      background-color: aqua;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 20px;
+
+    }
+
+    #d2 {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin-top: 40px;
+    }
+
+    #dot {
+      position: absolute;
+      bottom: 0;
+      margin: 10px 10px 10px 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="d1">
+
+    <div id="d2">
+      <p>
+      </p>
+    </div>
+    <div>
+
+      <input id="dot" type="text" value="" onkeydown="apple()">
+      <button id="submit" style="display: none;">sumbit</button>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("dot")
+      .addEventListener("keyup", function (e) {
+        if (e.keyCode === 13) {
+          document.getElementById("submit").click();
+        }
+      });
+
+     document.getElementById("submit").onclick 
+    
+    function apple() {
+      i = 1
+      if (i == 1) {
+        var x = document.getElementById('dot').value
+        
+      }
+    }
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

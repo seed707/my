@@ -1,0 +1,92 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <style>
+    .back-to-top {
+      position: fixed;
+      display: none;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      border: 4px solid #5cb85c;
+      background-color: #fff;
+      outline: none;
+      color: red;
+      cursor: pointer;
+      padding: 10px 15px 15px 15px;
+      border-radius: 10px;
+    }
+
+    .back-to-top:hover {
+      background-color: red;
+      color: #fff;
+    }
+
+    button {
+
+      font-weight: 900;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>a</p>
+  <!-- <div style="background-color:#5cb85c;color:white;padding:20px">固定到底部</div>
+
+  <div style="background-color:#f6f6f6;padding:20px 20px 1000px"> -->
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
+  <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+  
+  <script>
+
+    $(function () {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      $win.scroll(function () {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+
+      $backToTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 200);
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

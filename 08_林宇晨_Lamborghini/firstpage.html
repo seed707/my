@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini</title>
+    <link rel="stylesheet" href="./css/loading.css">
+    <style>
+        * {
+            margin: 0;
+            overflow-y: hidden;
+            font-family: "Lato", sans-serif;
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            position: relative;
+            bottom: 40px;
+        }
+
+        .navbar {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            z-index: 1;
+
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: lightblue;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: green;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+
+
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            right: 25px;
+            top: 3px;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+
+
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+        .nvimg {
+            width: 140px;
+            padding: 2px;
+        }
+
+        .nvfont {
+            position: relative;
+            top: 5px;
+            width: 50px;
+            color: #f1f1f1;
+            font-size: 24px;
+            padding: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .nvfont>a {
+            text-decoration: none;
+        }
+
+        .nvfont>a:link,
+        a:visited {
+            color: white;
+        }
+
+        .nvfont>a:hover {
+            color: #29c16b;
+            transition: 0.2s;
+        }
+
+
+        #search {
+            position: absolute;
+            bottom: 15px;
+            right: 150px;
+            width: 500px;
+            border-radius: 30px;
+            background-color: rgba(185, 199, 251, 0.7);
+            outline: none;
+        }
+
+        #search:focus {
+            border: 2px solid red;
+            box-shadow: 0 0 4px 0 red;
+        }
+
+        #mart {
+            position: absolute;
+            bottom: 10px;
+            right: 85px;
+            cursor: pointer;
+        }
+
+        #find {
+            position: absolute;
+            top: 15px;
+            right: 650px;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <img class="nvimg" src="./img/logo2.jpg">
+        <span class="nvfont"><a href="./model.html">MODELS</a></span>
+        <span class="nvfont"><a href="https://www.lamborghini.com/en-en/store">STORE</a></span>
+        <span class="nvfont"><a href="https://www.lamborghini.com/en-en/dealerships#showroom">DEALERSHIPS</a></span>
+        <img id="mart" src="./img/icon1.png">
+        <img id="find" src="./img/find.png">
+        <input id="search" type="search">
+        <div id="mySidebar" class="sidebar">
+            <a class="closebtn"></a>
+            <a href="./登入.html">LOGIN</a>
+            <a href="#">NEWS</a>
+            <a href="#">HISTORY</a>
+            <a href="#">CLUB</a>
+        </div>
+        <div id="btn1" class="container" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <a href="./homepage.html">
+        <video autoplay loop muted>
+            <source src="./vedio/lam6.mp4">
+        </video>
+    </a>
+
+
+
+
+    <script>
+        var x = 1;
+        var y = document.getElementById('btn1')
+        function openNav() {
+            y.classList.toggle("change");
+            if (x % 2 == 1) {
+                document.getElementById("mySidebar").style.width = "1000px";
+            } else {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+            console.log(x)
+            x++;
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

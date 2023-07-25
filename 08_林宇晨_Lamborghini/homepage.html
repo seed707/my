@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini</title>
+    <link rel="icon" href="./img/back22.png">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <style>
+        @media screen and (max-width:1900px) {
+            .navbar {
+                width: 100%;
+            }
+
+            .nvfont {
+                font-size: 16px;
+            }
+
+            .slideshow-container {
+                width: 70%;
+            }
+
+            .main1>img {
+                width: 40%;
+            }
+        }
+
+        .col {
+            width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .col {
+                flex: 100%;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+    <nav class="navbar">
+        <a href="./firstpage.html"> <img class="nvimg" src="./img/logo2.jpg"></a>
+        <span class="nvfont"><a href="./model.html">MODELS</a></span>
+        <span class="nvfont"><a href="https://www.lamborghini.com/en-en/store">STORE</a></span>
+        <span class="nvfont"><a href="https://www.lamborghini.com/en-en/dealerships#showroom">DEALERSHIPS</a></span>
+        <img id="mart" src="./img/icon1.png">
+        <img id="find" src="./img/find.png">
+        <input id="search" type="search">
+        <div id="mySidebar" class="sidebar">
+            <a class="closebtn"></a>
+            <a href="./登入.html">LOGIN</a>
+            <a href="#">NEWS</a>
+            <a href="#">HISTORY</a>
+            <a href="#">CLUB</a>
+        </div>
+        <div id="btn1" class="container" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <div>
+        <img id="gp1" src="./img/Group 1.png" width="100px">
+        <div class="slideshow-container" onmouseover="apple()" onmouseout="dog()">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/svj_xago_cover.webp" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/Cover.webp" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/982211.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/Lamborghini-Wallpaper-68-1920x1080.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/339197.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="img4" src="./img/Sian1.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <img id="gp2" src="./img/Group 1.png" width="100px">
+    </div>
+
+
+
+
+
+    <div class="main1">
+        <h1 style="text-align: center; position: relative; top: 70px; left: 190px; color: white;">News</h1>
+        <p id="p1">The Lamborghini Aventador SVJ Roadster Xago Edition, with just ten units<br> produced and
+            reserved for clients configuring their Aventador SVJ virtually, <br>was created to celebrate the new
+            virtual Ad Personam studio<span id="dots">...</span><span id="more"> offering<br> consultation
+                sessions to clients worldwide who want to
+                personalize their<br> new
+                Lamborghini without travelling to the specialist Ad Personam <br>department in Sant’Agata Bolognese
+                in Italy.</span>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <button class="more" id="myBtn" onclick="myf()">more</button>
+        </p>
+
+        <img id="main2" class="apple" src="./img/ultimaec2.png">
+
+
+
+        s
+    </div>
+
+
+    <br>
+    <div class="main1">
+        <div style="margin-right: 10px;">
+            <h1 style="position: relative; left: 90px; top: 100px; color: whitesmoke;">News</h1>
+            <p id="p2">The exterior of the Lamborghini Aventador SVJ Roadster Xago Edition took<br> 120 hours to produce
+                and features a specially-created fading hexagonal silver<br> effect, with a unique Ad Personam
+                contrasting
+                color livery for each car and gloss<br> black Nireo Ad Personam rims. The interior, created in 80 hours,
+                features
+                an<br>exclusive seat pattern with the hexagonita pattern, and special contrasting color<br> to match the
+                exterior....
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <button class="more">more</button>
+            </p>
+        </div>
+
+        <img id="main3" class="apple" src="./img/ultimae2.png">
+        <h1 style="margin: 0; position: relative;left: 100px; bottom: 40px; color: whitesmoke;">Models</h1>
+    </div>
+
+
+
+    <div class="row">
+        <div><img class="col" src="./img/Huracan.png"></div>
+        <div><img class="col" src="./img/urus.webp"></div>
+        <div><img class="col" src="./img/sian.png"></div>
+        <div><img class="col" src="./img/Revuelto.png"></div>
+        <div><img class="col" src="./img/veneno.png"></div>
+        <div><img class="col" src="./img/svj.png"></div>
+        <p></p>
+    </div>
+
+
+
+    <footers class="foot">
+        <div id="green">
+            <p>The consumption and emissions values in the website refer to your geographical IP.<br>
+                If you believe you are incorrectly geolocalized .
+
+            </p>
+        </div>
+        <div id="white">
+            <a href="https://www.instagram.com/lamborghini/?hl=en"> <img src="./img/inst.png"></a>
+            <a href="https://www.facebook.com/Lamborghini/"><img src="./img/fb.png"></a>
+            <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw"><img src="./img/yt.png"></a>
+            <a href="https://twitter.com/Lamborghini"><img src="./img/twitter.png"></a>
+        </div>
+
+        <div id="red">
+            <p class="bbb">CONTACT US</p>
+            <p class="bbb">MUSEUM</p>
+            <p class="bbb">SITEMAP</p>
+        </div>
+
+
+
+
+
+    </footers>
+
+
+
+
+
+    <script>
+
+
+         $(function () {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      $win.scroll(function () {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+
+      $backToTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 200);
+      });
+    });
+
+
+
+
+
+
+        var x = 1;
+        var y = document.getElementById('btn1')
+        function openNav() {
+            y.classList.toggle("change");
+            if (x % 2 == 1) {
+                document.getElementById("mySidebar").style.width = "1000px";
+            } else {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+            console.log(x)
+            x++;
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        var counter = 0
+        //輪播圖容器
+        var slide = document.getElementById('slideshow-container');
+        //輪播圖內所有圖片
+        var items = document.getElementsByClassName('img4');
+        //設一個變數取得圖片的內容值長度
+        var itemsCount = items.length;
+        //做到每兩秒更換一次圖片到最後一張時在回到第一張
+
+        var timer = setInterval(function () {
+            showSlides(slideIndex += 1);
+        }, 1000)
+
+        function apple() {
+            clearInterval(timer)
+        }
+
+        function dog() {
+            timer = setInterval(function () {
+                showSlides(slideIndex += 1);
+            }, 2000)
+        }
+
+        function myf() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = " more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = " less";
+                moreText.style.display = "inline";
+            }
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

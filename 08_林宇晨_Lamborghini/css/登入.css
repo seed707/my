@@ -1,0 +1,107 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/lamborghini.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+form {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 25px;
+    height: 450px;
+    
+    
+
+}
+
+form>strong,
+form>input,
+form>button {
+    display: block;
+}
+.check{
+    margin-bottom: 15px;
+    
+}
+
+form>input {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 2px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    
+}
+
+form>input:focus {
+    border: 2px solid red;
+    box-shadow: 0 0 4px 0 red;
+}
+
+form>button {
+    font-size: 18px;
+    color: aliceblue;
+    width: 100%;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0;
+    border-radius: 25px;
+}
+
+form>h1 {
+    text-align: center;
+    padding: 2px;
+    color: black;
+}
+    
+   
+    
+    
+
+form>button:hover {
+    background-color: rgb(255, 69, 0, 0.7);
+}
+#back{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+#back2{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.move{
+    position: relative;
+    bottom: 60px;
+}
+
+.move2{
+    position: relative;
+    bottom: 40px;
+        
+}
+.move2:active{
+    box-shadow: 0 5px lightblue;
+    transform: translateY(4px);
+}
+
